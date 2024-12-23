@@ -1,0 +1,82 @@
+.container {
+    min-height: 100%;
+    }
+    .container, form, input,textarea { 
+    padding: 10px;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+    }
+  
+    form {
+    width: 60%;
+    padding: 20px;
+    margin:auto;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 15px 0 #3263cd; 
+    }
+    .banner {
+    position: relative;
+    height: 260px;
+    background-image: url("/Frontend/public/images/360_F_988462250_uADwTYFuztkmzZFwG7jO9oT93wGkcARi.webp");  
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    .banner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+    input,textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+    input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    }
+  
+    textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+    }
+    .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+    color:  #3263cd;
+    }
+    
+
+   
+  
+   
+   
+    
+    button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #3263cd;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer; 
+    margin-right: 10px;
+   }
+    button:hover {
+    background: #5b82d7;
+    }
+    @media (min-width: 568px) {
+    .name-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }}

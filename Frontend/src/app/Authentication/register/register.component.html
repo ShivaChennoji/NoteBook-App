@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="main-block">
+        <h1>Register</h1>
+        <form class="form">
+            <hr>
+            <label><i class="fas fa-user"></i></label>
+            <input type="Email" [(ngModel)]="registerData.Email" name="Email" placeholder="Email" required />
+            <label><i class="fas fa-unlock-alt"></i></label>
+            <input type="password" [(ngModel)]="registerData.Password" name="password" placeholder="Password" required />
+            <hr>
+            <div class="btn-block">
+                <button type="submit" (click)="register()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

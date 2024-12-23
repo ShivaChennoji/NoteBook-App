@@ -1,0 +1,18 @@
+<div class="container">
+  <nav class="navbar">
+    <ol class="navbar-list">
+      <li><a routerLink="/" routerLinkActive="active">Notes List</a></li>
+      <ng-container *ngIf="!isLoggedIn; else loggedIn">
+        <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+        <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+      </ng-container>
+      <ng-template #loggedIn>
+        <li><a (click)="logout()">Logout</a></li>
+      </ng-template>
+      <li class="welcome-message">
+        <span><b>WELCOME TO NoteBook</b></span>
+      </li>
+    </ol>
+  </nav>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 10px;
+}
+.conatiner div,
+form,
+input,
+p {
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  color: #666;
+}
+h5 {
+  color: black;
+  padding: 10px 10px 5px 10px;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+h1 {
+  margin-left: 36%;
+}
+h2 {
+  margin-left: 40%;
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+}
+hr {
+  color: #a9a9a9;
+  opacity: 0.3;
+}
+.main-block {
+  max-width: 70%;
+  min-width: 50%;
+  min-height: 40px;
+  padding: 1px 0;
+  margin: auto;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
+  background: #f1e2e2;
+}
+form {
+  margin: 10px 30px;
+}
+.card-body {
+  background-color: whitesmoke;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+button{
+  margin-left: 10px;
+  color: chocolate;
+}

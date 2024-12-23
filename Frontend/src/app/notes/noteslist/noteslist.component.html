@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="main-block">
+    <h1>NoteBook</h1>
+    <hr>
+    <ng-container *ngFor="let item of Datalist ">
+      <div class="card bordered">
+        <div class="card-body">
+          <h5 class="card-title">Title:- {{ item.Title | titlecase }}</h5>
+          <p class="card-text">Description:- {{item.Description }}</p><br>
+          <button (click)="OnEdit(item)">Edit</button>
+          <button (click)="OnDelete(item._id)">Delete</button>
+        </div>
+        <hr>
+      </div>
+    </ng-container>
+
+    <h2 routerLink="/newnotes">+Add New</h2>
+  </div>
+</div>

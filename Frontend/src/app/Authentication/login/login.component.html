@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="main-block">
+        <h1>Login</h1>
+        <form action="/">
+            <hr>
+            <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+            <input type="text" name="name" [(ngModel)]="LoginData.Email" id="name" placeholder="Email" required />
+            <label id="icon"><i class="fas fa-unlock-alt"></i></label>
+            <input type="password" [(ngModel)]="LoginData.Password" name="Password" id="Password" placeholder="Password" required />
+            <hr>
+            <div class="btn-block">
+                <button type="submit" (click)="loginUser()">Submit</button>
+                <p>To Register<a routerLink="/register">Click here</a></p>
+            </div>
+        </form>
+    </div>
+</div>

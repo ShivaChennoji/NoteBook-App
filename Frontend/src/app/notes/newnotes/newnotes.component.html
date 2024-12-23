@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="testbox">
+        <form action="/">
+            <div class="banner">
+                <h1>Notes Book</h1>
+            </div>
+            <div class="item">
+                <p>Title :</p>
+                <div class="name-item">
+                    <input type="text" name="Title" placeholder="Title"  [(ngModel)]="Title"  required />
+                </div>
+                <div class="item">
+                    <p>Description :</p>
+                    <textarea rows="3" name="Description" [(ngModel)]="Description" placeholder="Note here..."></textarea>
+                </div>
+                <div class="btn-block">
+                    <button type="submit" (click)="Onsave()">SAVE</button>
+                    <button type="submit" (click)="Clear()" >CLEAR</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
